@@ -1,16 +1,23 @@
 {
-    "files": [
-        "src/"
-    ],
-    "scripts": {
-        "start": "parcel serve src/index.html",
-        "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url .",
-        "deploy": "gh-pages -d dist"
-    },
-    "devDependencies": {
-        "cross-env": "^5.2.0",
-        "gh-pages": "^1.2.0",
-        "parcel-bundler": "^1.9.7",
-        "typescript": "^2.9.2"
-    }
+  "name": "typescript-pokedex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GeorgeArubi/Typescript-Pokedex.git",
+  "author": "DOGHOUSETV <gea53899@marymount.edu>",
+  "license": "MIT",
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "watch": "parcel watch index.html",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+      "cross-env": "^5.2.0",
+      "gh-pages": "^1.2.0",
+      "parcel-bundler": "^1.9.7",
+      "typescript": "^2.9.2"
+  }
 }
